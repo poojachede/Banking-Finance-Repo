@@ -19,6 +19,6 @@ resource "aws_instance" "Test-Server" {
     command = "echo ${aws_instance.Test-Server.public_ip} > inventory"
   }
   provisioner "local-exec" {
-    command = "ansible-playbook /var/lib/jenkins/workspace/Banking-Finance-Project/terraform-files/ansiblefile.yml"
+    command = "ansible-playbook /var/lib/jenkins/workspace/Banking-Finance-Project/terraform-files/ansibleplaybook.yml"
   }
   }
